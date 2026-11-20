@@ -9,3 +9,5 @@ Studying web/infra vulnerability assessment, cloud security, and network securit
 `Python` `Kali Linux` `Burp Suite` `nmap` `AWS` `Linux` `Cisco IOS`
 
 📂 [sk-shieldus-rookies](https://github.com/WOOK-1014/sk-shieldus-rookies) — hands-on notes from the program
+
+📝 [개발 노트 · Development Notes](DEVELOPMENT-NOTES.md)
