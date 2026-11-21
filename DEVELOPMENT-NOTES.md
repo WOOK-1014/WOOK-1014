@@ -13,6 +13,7 @@
 
 ## 2026-11-21
 
+- **공부** — 오늘은 에이전트(AI agent)에 대해 공부한다.
 - **python-daily** — GitHub Codespaces로 PC 없이 연습장 사용
   - **문제** — vscode.dev는 브라우저 편집기라 파일을 보고 고칠 수만 있고, `python app.py`로 연습장 서버를 켤 수는 없었다.
   - **해결** — vscode.dev에서 Codespace를 만들어 클라우드에서 직접 들어가 사용해 보니 사용이 가능했다. PC를 켜 두지 않아도 된다.
