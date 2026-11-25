@@ -11,6 +11,14 @@
   - **해결** — 무엇을 바꿨는지, 아직 작업 중이면 다음에 무엇을 시도할지
   - **확인** — 테스트 결과나 커밋 링크가 있으면 추가
 
+## 2026-11-26 · Claude Code 스킬 늘리기
+
+- **Claude Code** — 공개 스킬·플러그인을 모든 프로젝트에서 쓰도록 사용자 범위에 설치했다
+  - **배경** — 개발 방법론(superpowers), 코딩 지침(karpathy-skills), 프론트엔드 디자인(frontend-design, impeccable), 보안 감사(Cloudflare security-audit), 스킬 검색(find-skills), Vercel 지침 모음을 써 보고 싶었다.
+  - **해결** — 설치 전에 저장소마다 최신 설치 방법과 실행 코드(훅, 스크립트)를 읽었다. 공식 플러그인 디렉터리에 있는 superpowers와 frontend-design은 거기서 받고, karpathy-skills는 저장소 마켓플레이스로, 나머지는 `npx skills --global`로 설치했다. 이를 위해 Node.js LTS를 설치했다.
+  - **보안 판단** — impeccable은 편집할 때마다 GitHub에서 서명 없는 엔진을 받아 실행하는 훅이 있어서 훅 없이 스킬만 넣었다. graphify는 모든 프로젝트에 규칙을 넣는 전역 CLAUDE.md를 만들지 않고 스킬만 넣었다.
+  - **확인** — `claude plugin list`에서 플러그인 3개가 사용자 범위로 켜졌고, 스킬 13개가 세션 목록에 바로 나타났다. superpowers의 세션 시작 훅도 Windows에서 직접 실행해 출력을 확인했다. 프로젝트 저장소 파일은 바뀌지 않았다.
+
 ## 2026-11-25 · 흩어진 프로젝트를 한 저장소로
 
 - **minwook-dev** — 따로 있던 Dev 폴더의 세 프로젝트를 개인 저장소 하나로 합쳤다
